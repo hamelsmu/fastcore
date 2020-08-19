@@ -255,7 +255,7 @@ def _mk_op(nm, mod=None):
     mod[nm] = _inner
 
 # Cell
-_all_ = ['lt','gt','le','ge','eq','ne','add','sub','mul','truediv','is_','is_not','in_']
+#nbdev_comment _all_ = ['lt','gt','le','ge','eq','ne','add','sub','mul','truediv','is_','is_not','in_']
 
 # Cell
 for op in ['lt','gt','le','ge','eq','ne','add','sub','mul','truediv','is_','is_not','in_']: _mk_op(op)
@@ -488,7 +488,7 @@ class _SelfCls:
 Self = _SelfCls()
 
 # Cell
-_all_ = ['Self']
+#nbdev_comment _all_ = ['Self']
 
 # Cell
 @patch
@@ -790,4 +790,4 @@ def in_notebook():
 IN_IPYTHON,IN_JUPYTER,IN_COLAB,IN_NOTEBOOK = in_ipython(),in_jupyter(),in_colab(),in_notebook()
 
 # Cell
-_all_ = ['IN_NOTEBOOK', 'IN_JUPYTER', 'IN_COLAB', 'IN_IPYTHON']
+#nbdev_comment _all_ = ['IN_NOTEBOOK', 'IN_JUPYTER', 'IN_COLAB', 'IN_IPYTHON']
